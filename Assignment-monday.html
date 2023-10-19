@@ -15,7 +15,7 @@
 
 <body>
     <div class="main-container">
-        <div class="left-container">
+        <aside class="left-container">
             <div class="left-top-banner">
                 <div class="left-banner-img">
                     <i class="bi bi-house-door"></i>
@@ -48,7 +48,7 @@
                     <i class="down-value">222.10</i>
                 </div>
             </div>
-        </div>
+        </aside>
         <div class="right-container">
             <header class="header">
                 <div class="top-right-text">
@@ -69,286 +69,175 @@
                 </div>
             </header>
             <hr>
-            <div class="below-header">
-                <div class="below-header-bar">
-                    <div class="overview-tittle">
-                        <h2>Overview</h2>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">This month <span><i class="bi bi-arrow-down-short"></i></span></button>
-                        <div class="dropdown-content">
+            <main>
+                <div class="below-header">
+                    <div class="below-header-bar">
+                        <div class="overview-tittle">
+                            <h2>Overview</h2>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">This month <span><i
+                                        class="bi bi-arrow-down-short"></i></span></button>
+                            <div class="dropdown-content">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="cards">
-                    <div class="main-first-card-container">
-                        <div class="first-card">
-                            <div class="card-top">
-                                <h4>Next Payout</h4>
+                    <div class="cards">
+                        <div class="main-first-card-container">
+                            <div class="first-card">
+                                <div class="card-top">
+                                    <h4>Next Payout</h4>
+                                    <i class=" bell bi bi-bell-fill"></i>
+
+                                </div>
+                                <div class="card-middle">
+                                    <span>$2,312.23</span>
+                                    <a href="#">23 orders <span><i class="bi bi-chevron-right"></i></span> </a>
+                                </div>
+                            </div>
+                            <div class="card-below">
+                                <span>Next payout date:</span>
+                                <span>Today,04:00PM</span>
+                            </div>
+                        </div>
+
+
+                        <div class="second-card">
+                            <div class="card-top1">
+                                <h4>Amount Pending</h4>
                                 <i class=" bell bi bi-bell-fill"></i>
-
                             </div>
-                            <div class="card-middle">
-                                <span>$2,312.23</span>
-                                <a href="#">23 orders <span><i class="bi bi-chevron-right"></i></span> </a>
+
+                            <div class="card-middle1">
+                                <span>$92,312.20</span>
+                                <a href="#">13 orders <span><i class="bi bi-chevron-right"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="third-card">
+                            <div class="card-top2">
+                                <h4>Amount Processed</h4>
+                                <i class=" bell bi bi-bell-fill"></i>
+                            </div>
+
+                            <div class="card-middle2">
+                                <span>$23,92,312.19</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="trans-heading">
+                        <h2>Transactions | This Month</h2>
+                        <button class="primary-btn">Payouts (22)</button>
+                        <button class="secondary-btn">Refunds (2)</button>
+                    </div>
+                    <div class="middle-below">
+                        <div class="bar-btn">
+                            <div class="order-id">
+                                <i class="bi bi-search"></i>
+                                <input type="text" name="order" placeholder="Order ID or transaction ID" size="20">
+                            </div>
+                            <div class="right-sort-btn">
+                                <button class="sort-btn">Sort <span><i class="bi bi-arrow-down-up"></i></span></button>
+                                <button class="arrow-btn"><span><i class="bi bi-download"></i></span></button>
                             </div>
                         </div>
-                        <div class="card-below">
-                            <span>Next payout date:</span>
-                            <span>Today,04:00PM</span>
-                        </div>
+                        <table class="table">
+                            <thead class="table-main-heading">
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Transaction ID</th>
+                                <th>Other Amount</th>
+                                <th>Transaction Fees</th>
+                                <th>Total</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Today, 09:00PM</td>
+                                    <td><span class="dots-differ"></span>Processing</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Today, 09:00PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Today, 09:00PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Yesterday,3:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Yesterday,3:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Yesterday,3:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>12 July 2023, 11:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>12 July 2023, 11:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>12 July 2023, 11:00 PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                                <tr>
+                                    <td>Today, 09:00PM</td>
+                                    <td><span class="dots"></span>Successful</td>
+                                    <td>131634495747</td>
+                                    <td>$10,125.00</td>
+                                    <td>$1,125.00</td>
+                                    <td>$9,312</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-
-                    <div class="second-card">
-                        <div class="card-top1">
-                            <h4>Amount Pending</h4>
-                            <i class=" bell bi bi-bell-fill"></i>
-                        </div>
-
-                        <div class="card-middle1">
-                            <span>$92,312.20</span>
-                            <a href="#">13 orders <span><i class="bi bi-chevron-right"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="third-card">
-                        <div class="card-top2">
-                            <h4>Amount Processed</h4>
-                            <i class=" bell bi bi-bell-fill"></i>
-                        </div>
-
-                        <div class="card-middle2">
-                            <span>$23,92,312.19</span>
-                        </div>
-
-                    </div>
-
                 </div>
-                <div class="trans-heading">
-                    <h2>Transactions | This Month</h2>
-                    <button class="primary-btn">Payouts (22)</button>
-                    <button class="secondary-btn">Refunds (2)</button>
-                </div>
-                <div class="middle-below">
-                    <div class="bar-btn">
-                        <div class="order-id">
-                            <i class="bi bi-search"></i>
-                            <input type="text" name="order" placeholder="Order ID or transaction ID" size="20">
-                        </div>
-                        <div class="right-sort-btn">
-                            <button class="sort-btn">Sort <span><i class="bi bi-arrow-down-up"></i></span></button>
-                            <button class="arrow-btn"><span><i class="bi bi-download"></i></span></button>
-                        </div>
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Transaction ID</th>
-                            <th>Other Amount</th>
-                            <th>Transaction Fees</th>
-                            <th>Total</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Today, 09:00PM</td>
-                                <td><span class="dots-differ"></span>Processing</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Today, 09:00PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Today, 09:00PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Yesterday,3:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Yesterday,3:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Yesterday,3:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>12 July 2023, 11:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>12 July 2023, 11:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>12 July 2023, 11:00 PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                            <tr>
-                                <td>Today, 09:00PM</td>
-                                <td><span class="dots"></span>Successful</td>
-                                <td>131634495747</td>
-                                <td>$10,125.00</td>
-                                <td>$1,125.00</td>
-                                <td>$9,312</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <div class="table-container">
-                        <div class="date">
-                            <span>Date</span>
-                            <p>Today,09:00 PM</p>
-                            <p>Today,03:00 PM</p>
-                            <p>Today,09:00 AM</p>
-                            <p>Yesterday,03:00 PM</p>
-                            <p>Yesterday,09:00 AM</p>
-                            <p>Yesterday,09:00 AM</p>
-                            <p>12 July 2023,09:00 PM</p>
-                            <p>11 July 2023,09:00 PM</p>
-                            <p>10 July 2023,09:00 PM</p>
-                            <p>09 July 2023,09:00 PM</p>
-                        </div>
-                        <div class="status">
-                            <span>Status</span>
-                            <div class="work-status">
-                                <div class="dots-differ"></div>
-                                <p> Processing</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                            <div class="work-status">
-                                <div class="dots"></div>
-                                <p>Successful</p>
-                            </div>
-                        </div>
-                        <div class="id">
-                            <span>Transaction Id</span>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                            <p>131634495747</p>
-                        </div>
-                        <div class="amount">
-                            <span>Order Amount</span>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-                            <p>$10,125.00</p>
-
-                        </div>
-                        <div class="fee">
-                            <span>Transaction Fees</span>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                            <p>$1,125.00</p>
-                        </div>
-                        <div class="total">
-                            <span>Total</span>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-                            <p>$9,312</p>
-
-
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-
+            </main>
         </div>
     </div>
 </body>
